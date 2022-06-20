@@ -1,0 +1,78 @@
+.chiar {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  left: 300px;
+  top: 275px;
+  background-color: #000;
+}
+
+@keyframes walk {
+  0% {
+    background-position: 0px 0px;
+  }
+  /* 25% {background-position: -68px 0px;} */
+  /* 50% {background-position: -136px 0px;} */
+  /* 75% {background-position: -204px 0px;} */
+  75% {
+    background-position: -272px 0px;
+  }
+}
+
+.smoke {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  /* border: 2px solid red; */
+  background: url('../img/smoke people.png') no-repeat;
+  animation: smoking 4s steps(11) infinite;
+}
+
+@keyframes smoking {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -2200px 0px;
+  }
+}
+
+.wrapper {
+  top: 120px;
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  display: block;
+  animation: move 4s steps(8) infinite;
+}
+
+@keyframes move {
+  5% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  15% {
+    left: 0px;
+  }
+  30% {
+    left: 0px;
+  }
+  40% {
+    left: 60px;
+  }
+  50% {
+    left: 90px;
+  }
+  55% {
+    left: 120px;
+  }
+  100% {
+    left: 120px;
+  }
+}
